@@ -1,0 +1,62 @@
+<h1>This session is related  below Topics</h1>
+<ul>
+  <li>Event handling</li>
+  <li>property Binding</li>
+  <li>reactive form</li>
+  <li>template driven form</li>
+</ul>
+
+<br/>
+<br/>
+
+
+<!-- template form -->
+
+<form #logginApp="ngForm" (ngSubmit)="LoggedIn(logginApp.value)">
+<input type="text" placeholder="Enter user name" name="UserTxt" ngModel />
+<br/>
+<input type="password" placeholder="Enter password" name="passwordtxt" ngModel />
+<br/>
+<button>Login</button>
+</form>
+
+
+
+
+<!-- reactive form example -->
+
+<!-- <form [formGroup]=logginApp (ngSubmit)="LoggedIn()">
+<input type="text" placeholder="Enter user name" name="UserTxt" formControlName="UserTxt" />
+<br/>
+<input type="password" placeholder="Enter password" name="passwordtxt" formControlName="passwordtxt" />
+<br/>
+<button>Login</button>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+<!-- <input type="text" [placeholder]="title"/> -->
+
+
+
+<!-- second task -->
+
+<!-- <button (click)="getCount('Increment')">++++</button>
+<button (click)="getCount('Decrement')">----</button>
+<br/>
+<span>Age Value is = {{age}}</span>
+ -->
+<!-- first task -->
+<!-- <input type="text" #nametxt name="namebox" (keyup)="getData(nametxt.value)" />
+<br/>
+
+<span>Name text box value is :{{title}}</span> -->
+<!-- <button (click)="getData('Hi Roshan')">Click me</button> -->
+
